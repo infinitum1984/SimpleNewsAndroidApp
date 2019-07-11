@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="400dp"
+
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimary">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+
+            >
+
+            <ImageButton
+                android:id="@+id/left_webview"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/img_button_background"
+                android:src="@drawable/ic_arrow" />
+
+            <ImageButton
+                android:id="@+id/right_webview"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="5dp"
+
+                android:background="@drawable/img_button_background"
+                android:rotation="180"
+                android:src="@drawable/ic_arrow" />
+        </LinearLayout>
+        <ImageButton
+            android:id="@+id/browser"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/img_button_background"
+            android:src="@drawable/ic_browser" />
+        <ImageButton
+            android:id="@+id/close_dialog"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/img_button_background"
+            android:src="@drawable/ic_close" />
+
+    </RelativeLayout>
+
+    <WebView
+        android:id="@+id/my_webview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    </WebView>
+
+</LinearLayout>

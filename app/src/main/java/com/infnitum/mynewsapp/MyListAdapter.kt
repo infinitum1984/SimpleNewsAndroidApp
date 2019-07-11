@@ -5,15 +5,18 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.BaseAdapter
+import android.widget.ImageView
+import android.widget.TextView
+import com.squareup.picasso.Picasso
 import java.util.ArrayList
 
-class MyListAdapter : BaseAdapter() {
+class MyListAdapter(c:Context, list:ArrayList<NewsModel>) : BaseAdapter() {
 
-    lateinit var my_list:ArrayList<NewsModel>
-    lateinit var context: Context
-    lateinit var layoutInflater:LayoutInflater
+    var my_list:ArrayList<NewsModel>
+    var context: Context
+    var layoutInflater:LayoutInflater
 
-    fun MyListAdapter( c:Context, list:ArrayList<NewsModel>){
+    init{
         my_list=list
         context=c
         layoutInflater= context.getSystemService(Context.LAYOUT_INFLATER_SERVICE) as LayoutInflater
@@ -38,6 +41,21 @@ class MyListAdapter : BaseAdapter() {
         }else{
             view=convertView
         }
+        val title = view.findViewById<TextView>(R.id.title)
+        val content = view.findViewById<TextView>(R.id.content)
+        val image = view.findViewById<ImageView>(R.id.img)
+
+        title.setText(my_list[position].title)
+
+        if (!my_list[position].author.equals("null")) {
+            content.setText(my_list[position].author)
+        }
+
+        Picasso.get()
+            .load(my_list[position].urlToImage)
+            .resize(60, 60)
+            .centerCrop()
+            .into(image)
 
 
 
