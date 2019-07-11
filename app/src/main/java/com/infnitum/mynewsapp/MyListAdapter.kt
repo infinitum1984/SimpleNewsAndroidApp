@@ -41,6 +41,7 @@ class MyListAdapter(c:Context, list:ArrayList<NewsModel>) : BaseAdapter() {
         }else{
             view=convertView
         }
+
         val title = view.findViewById<TextView>(R.id.title)
         val content = view.findViewById<TextView>(R.id.content)
         val image = view.findViewById<ImageView>(R.id.img)
@@ -51,6 +52,7 @@ class MyListAdapter(c:Context, list:ArrayList<NewsModel>) : BaseAdapter() {
             content.setText(my_list[position].author)
         }
 
+        //eas set img from url
         Picasso.get()
             .load(my_list[position].urlToImage)
             .resize(60, 60)
