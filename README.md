@@ -36,7 +36,7 @@ for easy set img from url
 * [Okhttp3](https://github.com/square/okhttp/tree/master/okhttp/src/main/java/okhttp3) 
 
 
-### Executing program
+### Test App
 * [Download APK](https://github.com/infinitum1984/SimpleNewsAndroidApp/blob/master/app/src/main/assets/Simple%20News%20App.apk) 
 
 
@@ -47,6 +47,5 @@ Email: danya.nosyk@gmail.com
 
 ## Acknowledgments
 
-Inspiration, code snippets, etc.
 * [Google News API](https://newsapi.org/s/google-news-api)
 
