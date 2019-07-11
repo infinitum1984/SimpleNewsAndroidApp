@@ -4,17 +4,12 @@
 
 
 
-## Simple News App
-
-> Short blurb about what your product does.
-
-[![NPM Version][npm-image]][npm-url]
-[![Build Status][travis-image]][travis-url]
-[![Downloads Stats][npm-downloads]][npm-url]
-
+# Simple News App
 <p align="left">
-  <img src="app/src/main/assets/icon.png" width="200" title="hover text">
+  <img src="app/src/main/assets/icon.png" width="100" title="hover text">
 </p>
+
+
 
 ## Description
 
