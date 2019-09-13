@@ -13,7 +13,7 @@
 
 ## Description
 
-This a simple news android app using google news api for get top headlines news. This portfolio project was created to show how easy it is to work with Kotlin and Google Api.raph about your project and overview of use.
+This a simple news android app using google news api for get top headlines news. This portfolio project was created to show how easy it is to work with Kotlin and Google Api.
 
 <p align="left">
   <img src="app/src/main/assets/screen1.png" width="200" title="hover text">
